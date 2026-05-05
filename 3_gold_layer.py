@@ -55,7 +55,7 @@ df_gold = df_line \
     .join(df_product, df_line.productid == df_product.product_id, "left") \
     .select(
         df_line.salesorderid,
-        df_sales.creationdate,   # ✅ ADD THIS
+        df_sales.creationdate,   
         df_sales.customerid,
         df_line.productid,
         df_product.product_name,
